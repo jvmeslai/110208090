@@ -4,29 +4,66 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
-	<style>
-		body {background-color: dimgray;}
-		#header { font-family: tahoma, helvetica, sans-serif;
-				color: red;}
-		.content {font-size: 20pt;
-			color:pink;}
-		span {color:ghostwhite;
-				font-size: 50pt}
-		.class span{color:inherit}
+	<style type= "text/css">
+		#head{ font-size: 50pt;
+			font-family: sans-serif;
+			}
+		p {
+			font-weight: bold;
+			color: green;
+			font-size: 20pt;
+		}
+		em ,h1{
+			color:burlywood;
+		}
 
-		p1 em {
-			text-decoration: underline;
-			font-size: 30pt;
-		}
-		h1,em{
-			text-decoration: overline;
-			color:yellowgreen;
-		}
 	</style>
 </head>
 <body>
-	<h1 id="header">Hello <span>everyone</span> </h1>
-	<p1 class="content">My name is <em>James<em>, </p1><br>
-	<p2 >My studentId is <span>110208090</span>.</p2>
+	<h1 id="head">HTML exercise</h1>
+	<form action="/action_page.php">
+	<p>	
+	<label>Color:
+		<input type="color" autofocus/>
+			<em>(Hexadecimal code such as #ADD8E6)</em>
+	</label><br>
+	
+	<label>Date:
+			<input type="date" name="date">
+	</label><br>
+	
+	
+	<label>Email:
+		<input type="email" name="email" placeholder="name@domain.com">
+		<em>(name@domain.com)</em>
+	</label><br>
+	
+	
+	<label>Number:
+		<input type="number" name="number" min="0" max="7">
+		<em>(Enter a number between 0 and 7)</em>
+	</label><br>
+	
+	
+	<label>Range: 0
+		<input type="range" name="range" min="0" max="20">
+		20
+	</label><br>
+	
+	
+	<label>Search:
+		<input type="search" name="search">
+	</label><br>
+	
+	
+	<label for="appt">Time:
+		<input type="time" name="appt" id="appt" >
+		<em>(hh:mm)</em>
+	</label><br>
+		<input type="submit" name="submit" value="submit">
+		<input type="reset" name="clear" value="clear">
+	</p> 	
+	</form>
+	<a href="exericse.html">exercise 2 link</a>
 </body>
 </html>
