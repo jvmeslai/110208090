@@ -5,19 +5,27 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	<style type= "text/css">
+		#head{ font-size: 50pt;
+			font-family: sans-serif;
+			}
 		p {
 			font-weight: bold;
 			color: green;
-			font-size: 12pt;
+			font-size: 20pt;
 		}
+		em ,h1{
+			color:burlywood;
+		}
+		
 	</style>
 </head>
 <body>
+	<h1 id="head">HTML exercise</h1>
 	<form action="/action_page.php">
 	<p>	
 	<label>Color:
 		<input type="color" autofocus/>
-			(Hexadecimal code such as #ADD8E6)
+			<em>(Hexadecimal code such as #ADD8E6)</em>
 	</label><br>
 	
 	<label>Date:
@@ -27,13 +35,13 @@
 	
 	<label>Email:
 		<input type="email" name="email" placeholder="name@domain.com">
-		(name@domain.com)
+		<em>(name@domain.com)</em>
 	</label><br>
 	
 	
 	<label>Number:
 		<input type="number" name="number" min="0" max="7">
-		(Enter a number between 0 and 7)
+		<em>(Enter a number between 0 and 7)</em>
 	</label><br>
 	
 	
@@ -50,7 +58,7 @@
 	
 	<label for="appt">Time:
 		<input type="time" name="appt" id="appt" >
-		(hh:mm)
+		<em>(hh:mm)</em>
 	</label><br>
 		<input type="submit" name="submit" value="submit">
 		<input type="reset" name="clear" value="clear">
